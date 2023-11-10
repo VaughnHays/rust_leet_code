@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+// 1. Two Sum
 
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
     let mut num_hash: HashMap<i32, i32> = HashMap::new();

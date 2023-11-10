@@ -1,6 +1,9 @@
+// 20. Valid Parentheses
 pub fn is_valid(s: String) -> bool {
-    if s.len() & 1 == 1 { return false; }
-    let mut stack:Vec<char> = vec![];
+    if s.len() & 1 == 1 {
+        return false;
+    }
+    let mut stack: Vec<char> = vec![];
 
     for char in s.chars() {
         match char {
@@ -9,8 +12,8 @@ pub fn is_valid(s: String) -> bool {
                 Some('(') if char == ')' => (),
                 Some('{') if char == '}' => (),
                 Some('[') if char == ']' => (),
-                _ => return false
-                }
+                _ => return false,
+            },
         }
     }
     stack.is_empty()
