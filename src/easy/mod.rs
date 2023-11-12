@@ -4,5 +4,6 @@ pub mod fibonacci_number;
 pub mod invert_binary_tree;
 pub mod two_sum;
 
+pub mod palindrome_number;
 pub mod valid_palindrome;
 pub mod valid_parentheses;
