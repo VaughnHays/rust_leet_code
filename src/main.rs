@@ -1,4 +1,4 @@
-use crate::non_leetcode::fizzbuzz_one_liner::fizzbuzz;
+use crate::medium::generate_parentheses::generate_parenthesis;
 
 mod easy;
 mod hard;
@@ -6,6 +6,6 @@ mod medium;
 mod non_leetcode;
 
 fn main() {
-    let res = fizzbuzz(100);
+    let res = generate_parenthesis(3);
     println!["{:?}", res]
 }
